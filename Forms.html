@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capta form</title>
+</head>
+<body>
+    <h3 style="text-align: center;">Capta Form</h3>
+     <form style="text-align: center;">
+        <fieldset style="width: 50%; margin: auto; text-align: left;">
+        <legend><b>Personal Information</b></legend>
+
+        <label for="capta">Enter Capta:</label>
+        <input type="text" id="capta" placeholder="Enter Capta.." name="capta">
+        <br>
+        <br>
+        <label for="name">User name:</label> 
+        <input type="text" placeholder="Enter name" id="name" name="username">
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Enter email" id="email" name="email">
+        <br>
+        <br>
+        <label for="password">Password: <span style="color: red;">*</span></label>
+        <input type="password" placeholder="Enter password" id="password" name="password" required>
+        <br>
+        <br>
+        <label for="number">Phone number:</label>
+        <input type="tel" placeholder="Enter phone number" id="number" name="number">
+        <br>
+        <br>
+        <label>Age:</label>
+        <input type="number" placeholder="Enter age" min="1" max="100">
+        <br>
+        <br>
+
+        <!--Date and time-->
+        <label>Date of Birth :</label>
+        <input type="date">
+        <br>
+        </fieldset>
+        <br>
+        <br>
+        <br>
+        <fieldset style="width: 50%; margin: auto; text-align: left;">
+            <legend><b>Other Information</b></legend>
+        <label>time</label>
+        <input type="time">
+        <br>
+        <br>
+        <label>month :</label>
+        <input type="month">
+        <br>
+        <br>
+        <label>week :</label>
+        <input type="week">
+        <br>
+        <br>
+        <label>Date of birth with time :</label>
+        <input type="datetime-local">
+        <br>
+        <br>
+
+        <!--Other input types-->
+        <label>Profile URL:</label>
+        <input type="url" placeholder="Enter profile URL">
+        <br>
+        <br>
+        <label>Color:</label>
+        <input type="color">
+        <br>
+        <br>
+        <label>Search:</label>
+        <input type="search">
+        <br>
+        <br>
+        <label>upload adhhar card :</label>
+        <input type="file" accept=".pdf">
+        <br>
+        <br>
+        <label>image :</label>
+        <input type="image" src="C:\Users\ADMIN\OneDrive\Desktop\frontend\Media\image.jpg" width="5%" height="5%">
+        <br>
+        <br>
+        <label>you allowed:</label>
+        <input type="hidden">
+        <br>
+        <br>
+        <label>Rate:</label>
+        <input type="range" min="1" max="5" value="0" name="rate">
+        <br>
+        <br>
+
+        <!--Check Box-->
+         <label>hobbies</label>
+        <label><input type="checkbox" name="option1" value="singing">singing</label>
+        <label><input type="checkbox" name="option2" value="reading">reading books</label>
+        <label><input type="checkbox" name="option3" value="cooking">cooking</label>
+        <br>
+        <br>
+
+        <!--Radio Button-->
+        <label>Gender</label>
+        <label><input type="radio" name="option" value="male">Male</label>
+        <label><input type="radio" name="option" value="female">Female</label>
+        <br>
+        <br>
+        <label for="tech">choose tech</label>
+        <select id=""tech name="tech">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+        </select>
+        <br>
+        <br
+        <label for="comment">enter comments:</label>
+        <textarea placeholder="enter comments......." rows="10" col="50" id="comment" name="comments"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="Submit"> &nbsp; &nbsp; &nbsp; &nbsp; 
+        <button type="reset">Cancel</button>
+        </fieldset>
+    </form>
+</body>
+</html>
