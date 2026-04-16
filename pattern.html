@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <h2>User Form</h2>
+    <hr>
+    <form> 
+        <!-- name validation-->
+        <!-- pattern="[A-Z]{2,50}" -->
+        <!-- pattern="[A-Za-z]{2,50}" --> 
+        <!-- pattern="[A-Z]{1}[a-z]{2,50}" --> 
+        <label for="fullname">Full Name</label>
+        <input type=""text" id="fullname" name="fullname" pattern="[A-Z]{1}[a-z]{2,50}["][A-Z]{1}[a-z]{50}">
+        <br>
+        <br>
+
+      <!-- Phone number validation-->
+      <!-- start with indian number-->
+       <label for="phone">Phone Number</label>
+       <input type="tel" id="phone" name="phone" pattern="^[6-9]{1}[0-9]{9}$" placeholder="enter 10 digits">
+       <br>
+       <br>
+       <!-- number with hyphen-->
+       <label for="phone">Alternative Number</label>
+       <input type="tel" id="phone" name="phone" pattern="\d{3}-\d{3}\d{4}$" placeholder="923-345-6784">
+        <br>
+        <br>
+        <!-- start with indian number +91 -->
+        <label for="phone">WhatsappS Number</label>
+       <input type="tel" id="phone" name="phone" pattern="^\+91[6-9]{1}\d{2}-\d{3}-\d{4}$" placeholder="+91-987-654-3210">
+        <br>
+        <br>
+
+
+        <!--password validation-->
+        <!--     pattern="^.{8,}$"    -->
+        <!--     pattern="^[A-Za-z\d!@#$%&*?]{8,}$"  -->
+        <!--     pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$"  -->
+             
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%&*?])[A-Za-z\d!@#$%&*?]{8,}$"
+        placeholder="1UC, 1LC, 1dig, 1spe_char">
+        <br>
+        <br>
+
+<!--email validation-->
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" pattern="^[A-Za-z0-9\._\-]+@[A-Za-z0-9\.\-]+\.[A-Za-z]{2,}$" placeholder="example@domain.com">
+        <br>
+        <br>
+
+        <button type="submit">Submit</button>
+   </form>
+</body>
+</html>
